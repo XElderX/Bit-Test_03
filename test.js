@@ -89,7 +89,7 @@ console.log(a)
 
 /* #9 */
 
-function pirminisSkaicius(n){
+/* function pirminisSkaicius(n){
 
     if(typeof n =='number'){
         for(let i=2; i <n;i++)
@@ -109,7 +109,44 @@ function pirminisSkaicius(n){
 }
 console.log(pirminisSkaicius("2"))
 
-
-
-/* #10
  */
+
+/* #10 */
+
+function telefonoNumeris (n) {
+    if(Array.isArray(n)== true){
+        if(n.length===10)
+        {
+            for(let i=0; i<10; i++){
+                if (typeof n[i]==='number'){ 
+                }
+                else{
+                    return ("masyve nevisi skaiciai yra skaiciai")
+                }
+            }
+        }
+        else{
+            return("masyvas yra per ilgas/trumpas")
+        }
+    }
+    else{
+        return("Tai nera masyvas")
+    }
+    let telNumeris = "("
+    for (x=0;x<3;x++){
+        telNumeris+=+n[x]
+    }
+    telNumeris+=")"+" "
+
+    for(x=3;x<6;x++){
+        telNumeris+=+n[x]
+    }
+    telNumeris+=" "
+    for(x=6;x<10;x++){
+        telNumeris+=n[x]
+    }
+    return(telNumeris)
+
+}
+let z =[3, 7, 0, 6, 1, 4, 4, 9, 0, 9]
+console.log(telefonoNumeris(z))
