@@ -90,12 +90,26 @@ console.log(a)
 /* #9 */
 
 function pirminisSkaicius(n){
-    if(typeof n =='number' && (n/n==1)){
-        return (n, "skaicius yra pirminis")
+
+    if(typeof n =='number'){
+        for(let i=2; i <n;i++)
+    {
+        if(n % i == 0){
+            return (n, "skaicius yra pirminis")
+        }
+        else {
+            return ("tai nera pirminis skaicius")
+        }
+    }
     }
     else {
-        return ("tai nera pirminis skaicius")
+        return ("tai nera skaicius")
     }
+   
 }
-console.log(pirminisSkaicius(4.41))
+console.log(pirminisSkaicius("2"))
 
+
+
+/* #10
+ */
