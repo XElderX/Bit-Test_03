@@ -58,7 +58,7 @@ console.log("didziausia masyvo reiksme yra:",b)
 
 /* #7 */
 
-let a=[]
+/* let a=[]
 
 
 for(let i=0; i<100; i++){
@@ -97,21 +97,44 @@ for(i=0; i<=99; i++){
         dd++
     }
 }
-
-
 console.log("Sugeneruoto masyvo reiksmes:",a)
 console.log("A -reiksmiu masyve: ",aa)
 console.log("B -reiksmiu masyve: ",bb)
 console.log("C -reiksmiu masyve: ",cc)
 console.log("D -reiksmiu masyve: ",dd)
-
-
-
-
-
+ */
 
 /* #8 */
 
+function lygineSuma (a,b){
+   
+    if(typeof a === typeof b && (Array.isArray(a)===true || typeof a==='number')){
+        if(typeof a==='number'){
+           let z=(a+b)
+           if(z%2!==0){
+               return("Suma: "+z+";"+" suma yra nelygine")
+           }
+           else{
+               return("Suma: "+z)
+           }
+        }
+        else{
+          let z=a.concat(b).length
+          if(z%2!==0){
+              return("Sudejus masyvus ju ilgis yra: "+z+"; Sis ilgis yra nelyginis")
+          }
+          else{
+              return("Sudejus masyvus ju ilgis yra: "+z)
+          }
+            
+        }
+    }
+    else{
+        return("pateikti kintamieji nera vienodo tipo")
+    }
+   
+}
+console.log(lygineSuma([4,5,6],[1,4,7,7]))
 
 /* #9 */
 
