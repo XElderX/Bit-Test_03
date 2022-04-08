@@ -58,7 +58,7 @@ console.log("didziausia masyvo reiksme yra:",b)
 
 /* #7 */
 
-/* let a=[]
+let a=[]
 
 
 for(let i=0; i<100; i++){
@@ -78,14 +78,40 @@ for(let i=0; i<100; i++){
             break;
     }
 }
+let aa=0
+let bb=0
+let cc=0
+let dd=0
 
-console.log(a)
+for(i=0; i<=99; i++){
+    if(a[i]==="A"){
+        aa++
+    }
+    else if(a[i]==="B"){
+        bb++
+    }
+    else if(a[i]==="C"){
+        cc++
+    }
+    else {
+        dd++
+    }
+}
 
 
- */
+console.log("Sugeneruoto masyvo reiksmes:",a)
+console.log("A -reiksmiu masyve: ",aa)
+console.log("B -reiksmiu masyve: ",bb)
+console.log("C -reiksmiu masyve: ",cc)
+console.log("D -reiksmiu masyve: ",dd)
+
+
+
+
 
 
 /* #8 */
+
 
 /* #9 */
 
@@ -111,9 +137,11 @@ console.log(pirminisSkaicius("2"))
 
  */
 
+
+
 /* #10 */
 
-function telefonoNumeris (n) {
+/* function telefonoNumeris (n) {
     if(Array.isArray(n)== true){
         if(n.length===10)
         {
@@ -149,4 +177,4 @@ function telefonoNumeris (n) {
 
 }
 let z =[3, 7, 0, 6, 1, 4, 4, 9, 0, 9]
-console.log(telefonoNumeris(z))
+console.log(telefonoNumeris(z)) */
